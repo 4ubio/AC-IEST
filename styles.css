@@ -33,6 +33,10 @@ footer {
     align-items: center;
 }
 
+p {
+    margin: 0;
+}
+
 .img_logo {
     width: 30rem;
 }
@@ -96,6 +100,24 @@ input {
     text-align:center;
 }
 
+.search_container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.input_salon {
+    background-color: #9D9C9C;
+    color: var(--white);
+    margin-bottom: 3rem;
+    width: 90%;
+}
+
+.input_salon::placeholder {
+    color: var(--white);
+}
+
 .logo {
     margin: 2rem 0 2rem 0;
     width: 15rem;
@@ -122,19 +144,60 @@ input {
     margin: 0 auto;
 }
 
+.card {
+    display: block;
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
+.top {
+    align-items: center;
+    background-color: black;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    color: var(--white);
+    display: flex;
+    font-size: 5rem;
+    height: 75%;
+    justify-content: center;
+}
+
+.bottom {
+    align-items: center;
+    background-color: var(--white);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    color: black;
+    display: flex;
+    font-size: 3rem;
+    height: 25%;
+    justify-content: left;
+    padding-left: 3rem;
+}
+
 @media (min-width: 768px) {
     .container {
         column-gap: 1rem;
         display: grid;
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         padding: 0 10rem;
     }
 
     .container_p {
-        column-gap: 1rem;
+        column-gap: 2rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0 10rem;
+    }
+
+    .search_container {
+        justify-content: right;
+        padding: 0 10rem 0 0;
+    }
+
+    .input_salon {
+        margin: 0 0 2rem 0;
+        width: 30%;
     }
 
     footer {
