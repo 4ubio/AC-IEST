@@ -229,7 +229,11 @@ input {
     border-top: 2px solid black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    align-items: space-between;
+}
+
+.container_button {
+    display: flex;
+    justify-content: flex-end;
 }
  
 .on{
@@ -240,8 +244,6 @@ input {
     color:white;
     font-family:  var(--font);
     font-size: 2rem;
-    display:flex;
-    justify-content: flex-end;
 }
 
 .temp{
